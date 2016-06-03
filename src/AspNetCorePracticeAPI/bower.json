@@ -1,0 +1,16 @@
+{
+  "name": "AspNetCorePracticeAPI",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.x",
+    "jquery": "2.x",
+    "jquery-validation": "1.x",
+    "jquery-validation-unobtrusive": "3.x",
+    "angular": "1.x",
+    "angular-resource": "1.x",
+    "angular-bootstrap": "1.x",
+    "angular-animate": "1.x",
+    "angular-touch": "1.x",
+    "angular-ui-router": "0.x"
+  }
+}

@@ -1,0 +1,56 @@
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="AspNetCorePracticeAPI">
+<head>
+    <title>AspNetCorePracticeAPI</title>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <base href="/" />
+</head>
+<body ng-controller="AccountController as account">
+    <div class="container">
+        <h1>AspNetCorePracticeAPI</h1>
+
+        <h2>Movies</h2>
+        <ul>
+            <li>GET: /api/movies &mdash; Returns a list of first 25 movies.</li>
+            <li>GET: /api/movies/7 &mdash; Returns details for movie with Id 7.</li>
+            <li>POST: /api/movies &mdash; Adds or updates movie.</li>
+            <li>DELETE: /api/movies/7 &mdash; Deletes movie with Id 7.</li>
+            <li>GET: /api/movies/search/Star &mdash; Returns movies that start with "Star" (case-sensitive).</li>
+        </ul>
+
+        <h2>Genres</h2>
+        <ul>
+            <li>GET: /api/genres &mdash; Returns a list of all movie genres.</li>
+            <li>GET: /api/genres/7 &mdash; Returns genre with Id 7 including genre movies.</li>
+        </ul>
+
+        <h2>Guestbook</h2>
+        <ul>
+            <li>GET: /api/guestbook &mdash; Returns a list of first 25 guestbook entries.</li>
+            <li>GET: /api/guestbook/7 &mdash; Returns details for guestbook entry with Id 7.</li>
+            <li>POST: /api/guestbook &mdash; Adds or updates guestbook entry.</li>
+        </ul>
+
+
+    </div>
+
+    <!-- Library Files -->
+    <script src="~/lib/angular/angular.js"></script>
+    <script src="~/lib/angular-resource/angular-resource.js"></script>
+    <script src="~/lib/angular-animate/angular-animate.js"></script>
+    <script src="~/lib/angular-touch/angular-touch.js"></script>
+    <script src="~/lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="~/lib/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <!-- App Files-->
+    <script src="~/ngapp/app.js"></script>
+    <script src="~/ngapp/controllers/controllers.js"></script>
+    <script src="~/ngapp/services/services.js"></script>
+
+
+    <!-- Security -->
+    <script src="~/ngapp/controllers/accountcontroller.js"></script>
+    <script src="~/ngapp/services/accountservice.js"></script>
+
+</body>
+</html>

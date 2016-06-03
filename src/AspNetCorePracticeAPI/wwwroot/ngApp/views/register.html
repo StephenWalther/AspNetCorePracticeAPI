@@ -1,0 +1,37 @@
+<h1>Register</h1>
+
+<fieldset>
+    <legend>Register with a Social Provider</legend>
+    <ul>
+        <li ng-repeat="externalLogin in account.externalLogins">
+            <a target="_self" href="{{externalLogin.url}}">{{externalLogin.name}}</a>
+        </li>
+    </ul>
+
+</fieldset>
+
+<fieldset>
+    <legend>Local Registration</legend>
+    <ul>
+        <li ng-repeat="message in controller.validationMessages">
+            {{message}}
+        </li>
+    </ul>
+
+    <form ng-submit="controller.register()">
+        <div>
+            <label>Email:</label>
+            <input ng-model="controller.registerUser.email" />
+        </div>
+        <div>
+            <label>Password:</label>
+            <input ng-model="controller.registerUser.password" />
+        </div>
+        <div>
+            <label>Confirm Password:</label>
+            <input ng-model="controller.registerUser.confirmPassword" />
+        </div>
+        <input type="submit" value="Register" />
+    </form>
+
+</fieldset>

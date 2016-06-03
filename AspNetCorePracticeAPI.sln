@@ -1,0 +1,32 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DC015E23-7341-4A02-AD25-D3A9A240BB5B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5286974E-A985-4D31-B323-7A9478EA7310}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "AspNetCorePracticeAPI", "src\AspNetCorePracticeAPI\AspNetCorePracticeAPI.xproj", "{3EB6FE8D-CDDB-408E-B870-849F14FF89F4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EB6FE8D-CDDB-408E-B870-849F14FF89F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EB6FE8D-CDDB-408E-B870-849F14FF89F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EB6FE8D-CDDB-408E-B870-849F14FF89F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EB6FE8D-CDDB-408E-B870-849F14FF89F4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3EB6FE8D-CDDB-408E-B870-849F14FF89F4} = {DC015E23-7341-4A02-AD25-D3A9A240BB5B}
+	EndGlobalSection
+EndGlobal
